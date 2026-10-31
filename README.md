@@ -5,7 +5,7 @@
 <h1 align="center">NamKey</h1>
 
 <p align="center">
-  Bộ gõ tiếng Việt gọn nhẹ, mã nguồn mở, lõi viết bằng Rust.<br>
+  Bộ gõ tiếng Việt gọn nhẹ, miễn phí, lõi viết bằng Rust.<br>
   <a href="https://github.com/luu2nam/namkey/releases/latest"><b>⬇ Tải bản mới nhất</b></a>
   &nbsp;·&nbsp;
   <a href="https://namlh.net/namkey">namlh.net/namkey</a>
@@ -15,11 +15,14 @@
 
 ## Tính năng
 
-- **Telex và VNI.** Gõ dấu ở đâu trong từ cũng được: `toasn` → toán.
+- **Telex và VNI, gõ theo thói quen của bạn.** Gõ dấu ở đâu trong từ cũng được, theo thứ tự nào cũng được:
+  `nguwowif`, `nguoiwf`, `ngwowif` đều ra **người**; `duongwfd` ra **đường**.
 - **Đặt dấu kiểu cũ hoặc kiểu mới:** hòa, khỏe, thủy hoặc hoà, khoẻ, thuỷ.
-- **Kiểm tra chính tả.** Từ không phải tiếng Việt như `text`, `windows`, `google` được giữ nguyên.
+- **Kiểm tra chính tả với từ điển âm tiết tiếng Việt.** Từ không phải tiếng Việt như `text`, `windows`,
+  `google`, `wow`, `data` được giữ nguyên như đã gõ.
 - **Gõ lặp phím để bỏ dấu** (`ass` → as). Xoá lùi không mất dấu (tiếng ⌫ → tiến).
-- **Bật/tắt nhanh** bằng **Ctrl+Shift**, hoặc click biểu tượng **V/E** ở khay hệ thống.
+- **Bật/tắt nhanh** bằng **Ctrl+Shift**, hoặc click biểu tượng **V/E** ở khay hệ thống. **Phím tắt gán lại
+  được**, kể cả để chuyển Telex ↔ VNI hay mở cài đặt.
 - **Cửa sổ cài đặt rõ ràng**, có bảng phím, ví dụ và ô gõ thử.
 - **Tự cập nhật** từ trang này, có kiểm tra mã SHA-256 của file tải về.
 - **Gọn nhẹ.** Bộ gõ chạy nền chỉ khoảng 300 KB, không quảng cáo, không thu thập dữ liệu.
@@ -44,6 +47,7 @@
 |---|---|
 | **Ctrl+Shift** (bấm rồi thả, không kèm phím khác) | Bật/tắt tiếng Việt |
 | Click trái biểu tượng ở khay | Bật/tắt tiếng Việt |
+| Nháy đúp biểu tượng ở khay | Mở cửa sổ cài đặt |
 | Click phải biểu tượng ở khay | Chọn Telex/VNI, Cài đặt, Kiểm tra cập nhật, Thoát |
 
 ### Bảng phím
@@ -68,17 +72,19 @@ bấm **Tải về và cập nhật** là xong. Cũng có thể click phải bi�
 
 - Chưa gõ được vào ứng dụng chạy bằng quyền Administrator.
 - Thanh địa chỉ của trình duyệt (có gợi ý tự động) đôi khi làm sai chữ.
-- Một số từ tiếng Anh trùng với âm tiết tiếng Việt vẫn bị thêm dấu (`this` → thí). Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt.
+- Từ tiếng Anh trùng với âm tiết tiếng Việt có thật vẫn được gõ thành tiếng Việt (`this` → thí, `six` → sĩ),
+  vì đó cũng là cách gõ tiếng Việt hợp lệ. Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt.
 - Chưa có bản cho macOS và Linux.
 
 Góp ý hoặc báo lỗi: tạo [issue](https://github.com/luu2nam/namkey/issues) tại đây.
 
 ## Pháp lý
 
+- [Giấy phép sử dụng](LICENSE)
 - [Điều khoản sử dụng](legal/DIEU-KHOAN-SU-DUNG.md)
 - [Chính sách quyền riêng tư](legal/CHINH-SACH-QUYEN-RIENG-TU.md): NamKey không thu thập, không lưu và không gửi
   đi phím bấm hay dữ liệu cá nhân của bạn.
 - [Bản quyền và nhãn hiệu](legal/BAN-QUYEN.md)
 - [Thông báo phần mềm bên thứ ba](legal/THONG-BAO-BEN-THU-BA.md) · [toàn văn giấy phép](legal/THIRD-PARTY-LICENSES.txt)
 
-Mã nguồn NamKey phát hành theo [Giấy phép MIT](LICENSE). © 2026 Lưu Hải Nam · [namlh.net](https://namlh.net)
+NamKey là phần mềm miễn phí, mã nguồn đóng. © 2026 Lưu Hải Nam, giữ mọi quyền · [namlh.net](https://namlh.net)

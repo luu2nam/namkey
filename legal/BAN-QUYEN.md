@@ -1,23 +1,21 @@
 # Bản quyền và nhãn hiệu NamKey
 
-## Bản quyền mã nguồn
+## Bản quyền
 
-© 2026 Lưu Hải Nam.
+© 2026 Lưu Hải Nam. Giữ mọi quyền.
 
-Mã nguồn NamKey được phát hành theo **Giấy phép MIT**: được tự do sử dụng, sao chép, sửa đổi, gộp, xuất
-bản, phân phối, cấp phép lại và bán. Điều kiện duy nhất là giữ nguyên thông báo bản quyền và giấy phép
-trong mọi bản sao. Toàn văn giấy phép có trong tệp `LICENSE`.
+NamKey là **phần mềm miễn phí, mã nguồn đóng**. Mã nguồn là tài sản trí tuệ của tác giả và không được công
+bố. Bạn được dùng và chia sẻ bản gốc NamKey miễn phí theo **Giấy phép sử dụng** (tệp `LICENSE`), nhưng
+không được bán lại, sửa đổi, dịch ngược hay tìm cách lấy mã nguồn.
 
 ## Tên và biểu tượng NamKey
 
-Tên **NamKey** và biểu tượng của NamKey (phím màu xanh có chữ "n", biểu tượng khay "V"/"E") là dấu hiệu
-nhận biết sản phẩm của Lưu Hải Nam. Giấy phép MIT áp dụng cho mã nguồn, **không** bao gồm quyền dùng tên
-và biểu tượng này để gắn cho sản phẩm khác.
+Tên **NamKey** và biểu tượng của NamKey (chữ "N" đội dấu mũ trên nền xanh ngọc, biểu tượng khay "V"/"E") là dấu hiệu
+nhận biết sản phẩm của Lưu Hải Nam. Giấy phép sử dụng **không** bao gồm quyền dùng tên và biểu tượng này
+để gắn cho sản phẩm khác.
 
-- **Được phép:** nhắc tới tên NamKey để giới thiệu, đánh giá, hướng dẫn, hoặc để nói rõ một sản phẩm "dựa
-  trên NamKey".
-- **Cần đổi tên và biểu tượng:** khi phân phối một bản đã sửa đổi. Người dùng cần phân biệt được bản đó
-  với NamKey chính thức.
+- **Được phép:** nhắc tới tên NamKey để giới thiệu, đánh giá, viết hướng dẫn, hoặc khi chia sẻ bản gốc
+  NamKey theo Giấy phép sử dụng.
 - **Không được:** dùng tên hoặc biểu tượng NamKey theo cách khiến người khác hiểu nhầm rằng sản phẩm của bạn
   là NamKey chính thức, hoặc được tác giả bảo trợ hay chấp thuận.
 

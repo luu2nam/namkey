@@ -1,21 +1,58 @@
-MIT License
+# Giấy phép sử dụng phần mềm NamKey
 
-Copyright (c) 2026 Lưu Hải Nam
+Bản quyền © 2026 Lưu Hải Nam. Giữ mọi quyền.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+NamKey, gồm `namkey.exe`, `namkey-settings.exe`, biểu tượng, hình ảnh và tài liệu đi kèm (gọi chung là
+"Phần mềm"), là **phần mềm miễn phí, mã nguồn đóng**. Mã nguồn của Phần mềm không được công bố. Phần mềm
+được cấp phép để sử dụng, không phải được bán.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 1. Bạn được phép
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Tải về, cài đặt và sử dụng Phần mềm miễn phí, trên bao nhiêu máy tuỳ ý, cho mục đích cá nhân, học tập,
+  công việc hay kinh doanh.
+- Sao chép và chia sẻ Phần mềm cho người khác, với điều kiện: giữ nguyên các tệp gốc, không sửa đổi; kèm
+  theo giấy phép này; và không thu tiền hay đòi lợi ích nào cho việc chia sẻ.
+
+## 2. Bạn không được phép
+
+- Bán, cho thuê, hoặc dùng Phần mềm để thu tiền dưới bất kỳ hình thức nào, kể cả đóng gói chung với sản
+  phẩm hay dịch vụ có thu phí.
+- Sửa đổi Phần mềm, dịch ngược, phân rã mã máy (decompile, disassemble), hoặc tìm cách khác để lấy mã
+  nguồn, trừ khi pháp luật áp dụng cho phép việc đó một cách rõ ràng.
+- Gỡ bỏ hoặc thay đổi thông tin bản quyền, tên tác giả hay biểu tượng trong Phần mềm.
+- Phát hành Phần mềm, hoặc bất kỳ phần nào của nó, dưới tên khác, hoặc gắn vào sản phẩm khác.
+- Chèn quảng cáo, mã độc hay bất kỳ thành phần nào khác vào Phần mềm rồi phân phối.
+
+Muốn làm những việc ngoài phạm vi trên, hãy liên hệ tác giả để xin phép bằng văn bản.
+
+## 3. Quyền sở hữu
+
+Mọi quyền tác giả và quyền sở hữu trí tuệ đối với Phần mềm, mã nguồn, tên và biểu tượng NamKey thuộc về
+Lưu Hải Nam. Quyền nào không được nêu rõ trong giấy phép này thì tác giả vẫn giữ.
+
+## 4. Thành phần của bên thứ ba
+
+Phần mềm có dùng một số thư viện và phông chữ mã nguồn mở của bên thứ ba, mỗi thành phần theo giấy phép
+riêng (xem `THIRD-PARTY-LICENSES.txt`). Giấy phép này không hạn chế các quyền bạn có theo những giấy phép
+đó đối với chính các thành phần ấy.
+
+## 5. Không bảo đảm
+
+Phần mềm được cung cấp "nguyên trạng", không kèm bất kỳ bảo đảm nào, dù rõ ràng hay ngụ ý, kể cả bảo đảm
+về khả năng thương mại, sự phù hợp với một mục đích cụ thể hay việc không vi phạm quyền.
+
+## 6. Giới hạn trách nhiệm
+
+Trong phạm vi pháp luật cho phép, tác giả không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc
+sử dụng hoặc không thể sử dụng Phần mềm.
+
+## 7. Chấm dứt
+
+Giấy phép tự chấm dứt nếu bạn vi phạm bất kỳ điều khoản nào. Khi đó bạn phải ngừng sử dụng, ngừng chia sẻ
+và xoá mọi bản sao của Phần mềm mà bạn có.
+
+## 8. Luật áp dụng
+
+Giấy phép này được điều chỉnh theo pháp luật nước Cộng hoà xã hội chủ nghĩa Việt Nam.
+
+Liên hệ: namlh.net · github.com/luu2nam/namkey

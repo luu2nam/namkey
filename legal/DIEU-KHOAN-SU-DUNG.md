@@ -2,15 +2,20 @@
 
 Có hiệu lực từ ngày 31/10/2026.
 
-NamKey là bộ gõ tiếng Việt miễn phí, mã nguồn mở, do Lưu Hải Nam phát triển và phát hành tại
+NamKey là bộ gõ tiếng Việt miễn phí, mã nguồn đóng, do Lưu Hải Nam phát triển và phát hành tại
 namlh.net/namkey và github.com/luu2nam/namkey. Khi tải về, cài đặt hoặc sử dụng NamKey, bạn đồng ý
 với các điều khoản dưới đây.
 
 ## 1. Quyền sử dụng
 
-NamKey được cấp phép theo Giấy phép MIT (xem tệp `LICENSE`). Bạn được tự do sử dụng, sao chép,
-sửa đổi và phân phối NamKey cho mục đích cá nhân hoặc thương mại, miễn là giữ nguyên thông báo bản
-quyền và giấy phép. Tên và biểu tượng NamKey có quy định riêng tại văn bản **Bản quyền và nhãn hiệu**.
+NamKey được cấp phép theo **Giấy phép sử dụng** (tệp `LICENSE`). Tóm tắt:
+
+- **Được:** dùng miễn phí trên bao nhiêu máy tuỳ ý, cho cá nhân, học tập, công việc hay kinh doanh; chia sẻ
+  bản gốc nguyên vẹn cho người khác, không thu tiền.
+- **Không được:** bán lại, sửa đổi, dịch ngược hay tìm cách lấy mã nguồn, gỡ thông tin bản quyền, phát hành
+  dưới tên khác, chèn quảng cáo hay mã độc rồi phân phối.
+
+Tên và biểu tượng NamKey có quy định riêng tại văn bản **Bản quyền và nhãn hiệu**.
 
 NamKey hoàn toàn miễn phí. Nếu ai đó bán lại NamKey, hãy biết rằng bạn luôn có thể tải bản chính thức
 miễn phí tại namlh.net/namkey.
