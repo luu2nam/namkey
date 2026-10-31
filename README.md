@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/images/namkey-256.png" width="120" alt="namkey">
+  <img src="docs/images/namkey-256.png" width="120" alt="NamKey">
 </p>
 
-<h1 align="center">namkey</h1>
+<h1 align="center">NamKey</h1>
 
 <p align="center">
   Bộ gõ tiếng Việt gọn nhẹ, mã nguồn mở, lõi viết bằng Rust.<br>
@@ -11,7 +11,7 @@
   <a href="https://namlh.net/namkey">namlh.net/namkey</a>
 </p>
 
-![Cửa sổ cài đặt của namkey](docs/images/overview.png)
+![Cửa sổ cài đặt của NamKey](docs/images/overview.png)
 
 ## Tính năng
 
@@ -33,7 +33,7 @@
 4. Click phải vào biểu tượng rồi chọn **Cài đặt...** để chọn kiểu gõ và bật **Khởi động cùng Windows**.
 
 > **Lưu ý**
-> - namkey chưa được ký số. Lần đầu chạy, Windows SmartScreen có thể cảnh báo: bấm **More info → Run anyway**.
+> - NamKey chưa được ký số. Lần đầu chạy, Windows SmartScreen có thể cảnh báo: bấm **More info → Run anyway**.
 >   Một số phần mềm diệt virus có thể nghi ngờ, vì bộ gõ nào cũng phải đọc phím bấm để thêm dấu.
 > - Nếu máy đang có bộ gõ khác (UniKey, EVKey...), hãy tắt nó hoặc chuyển nó sang chế độ tiếng Anh.
 >   Nếu không, chữ sẽ bị thêm dấu hai lần và phím Ctrl+Shift bị tranh nhau.
@@ -61,7 +61,7 @@
 
 ## Cập nhật
 
-namkey tự kiểm tra bản mới khi khởi động và mỗi ngày một lần. Khi có bản mới, cửa sổ cập nhật hiện lên,
+NamKey tự kiểm tra bản mới khi khởi động và mỗi ngày một lần. Khi có bản mới, cửa sổ cập nhật hiện lên,
 bấm **Tải về và cập nhật** là xong. Cũng có thể click phải biểu tượng ở khay và chọn **Kiểm tra cập nhật...**.
 
 ## Hạn chế đã biết
@@ -73,6 +73,12 @@ bấm **Tải về và cập nhật** là xong. Cũng có thể click phải bi�
 
 Góp ý hoặc báo lỗi: tạo [issue](https://github.com/luu2nam/namkey/issues) tại đây.
 
-## Giấy phép
+## Pháp lý
 
-[MIT](LICENSE) © Lưu Hải Nam · [namlh.net](https://namlh.net)
+- [Điều khoản sử dụng](legal/DIEU-KHOAN-SU-DUNG.md)
+- [Chính sách quyền riêng tư](legal/CHINH-SACH-QUYEN-RIENG-TU.md): NamKey không thu thập, không lưu và không gửi
+  đi phím bấm hay dữ liệu cá nhân của bạn.
+- [Bản quyền và nhãn hiệu](legal/BAN-QUYEN.md)
+- [Thông báo phần mềm bên thứ ba](legal/THONG-BAO-BEN-THU-BA.md) · [toàn văn giấy phép](legal/THIRD-PARTY-LICENSES.txt)
+
+Mã nguồn NamKey phát hành theo [Giấy phép MIT](LICENSE). © 2026 Lưu Hải Nam · [namlh.net](https://namlh.net)
