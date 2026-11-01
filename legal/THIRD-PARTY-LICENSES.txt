@@ -1,14 +1,15 @@
 NamKey - third-party software licenses
 ======================================
 
-NamKey (namkey.exe, namkey-settings.exe) includes the open-source components
-listed below, each used under the license shown. The license texts shipped
-with each component follow; identical texts are printed once as [#n].
+NamKey (Windows: namkey.exe, namkey-settings.exe; macOS: NamKey.app) includes the
+open-source components listed below, each used under the license shown. The license
+texts shipped with each component follow; identical texts are printed once as [#n].
 
   ab_glyph 0.2.32  (Apache-2.0)
   ab_glyph_rasterizer 0.1.10  (Apache-2.0)
   accesskit 0.16.3  (MIT OR Apache-2.0)
   accesskit_consumer 0.24.3  (MIT OR Apache-2.0)
+  accesskit_macos 0.17.4  (MIT OR Apache-2.0)
   accesskit_windows 0.23.2  (MIT OR Apache-2.0)
   accesskit_winit 0.22.4  (Apache-2.0)
   adler2 2.0.1  (0BSD OR MIT OR Apache-2.0)
@@ -16,18 +17,27 @@ with each component follow; identical texts are printed once as [#n].
   arboard 3.7.0  (MIT OR Apache-2.0)
   arrayvec 0.7.8  (MIT OR Apache-2.0)
   base64 0.22.1  (MIT OR Apache-2.0)
+  bitflags 1.3.2  (MIT/Apache-2.0)
   bitflags 2.13.2  (MIT OR Apache-2.0)
+  block2 0.5.1  (MIT)
   block-buffer 0.10.4  (MIT OR Apache-2.0)
   bytemuck 1.25.2  (Zlib OR Apache-2.0 OR MIT)
   bytemuck_derive 1.12.1  (Zlib OR Apache-2.0 OR MIT)
   byteorder-lite 0.1.0  (Unlicense OR MIT)
   cfg-if 1.0.5  (MIT OR Apache-2.0)
+  cgl 0.3.2  (MIT / Apache-2.0)
   clipboard-win 5.4.3  (BSL-1.0)
+  core-foundation 0.9.4  (MIT OR Apache-2.0)
+  core-foundation-sys 0.8.7  (MIT OR Apache-2.0)
+  core-graphics 0.23.2  (MIT OR Apache-2.0)
+  core-graphics-types 0.1.3  (MIT OR Apache-2.0)
   cpufeatures 0.2.17  (MIT OR Apache-2.0)
   crc32fast 1.5.3  (MIT OR Apache-2.0)
   crypto-common 0.1.7  (MIT OR Apache-2.0)
   cursor-icon 1.2.0  (MIT OR Apache-2.0 OR Zlib)
   digest 0.10.7  (MIT OR Apache-2.0)
+  dispatch 0.2.0  (MIT)
+  dispatch2 0.3.1  (Zlib OR Apache-2.0 OR MIT)
   displaydoc 0.2.7  (MIT OR Apache-2.0)
   document-features 0.2.12  (MIT OR Apache-2.0)
   dpi 0.1.2  (Apache-2.0 AND MIT)
@@ -42,6 +52,9 @@ with each component follow; identical texts are printed once as [#n].
   error-code 3.4.0  (BSL-1.0)
   fdeflate 0.3.7  (MIT OR Apache-2.0)
   flate2 1.1.10  (MIT OR Apache-2.0)
+  foreign-types 0.5.0  (MIT/Apache-2.0)
+  foreign-types-macros 0.2.4  (MIT/Apache-2.0)
+  foreign-types-shared 0.3.1  (MIT/Apache-2.0)
   form_urlencoded 1.2.2  (MIT OR Apache-2.0)
   generic-array 0.14.7  (MIT)
   getrandom 0.2.17  (MIT OR Apache-2.0)
@@ -62,6 +75,7 @@ with each component follow; identical texts are printed once as [#n].
   image 0.25.9  (MIT OR Apache-2.0)
   immutable-chunkmap 2.1.5  (Apache-2.0 OR MIT)
   itoa 1.0.18  (MIT OR Apache-2.0)
+  libc 0.2.191  (MIT OR Apache-2.0)
   libloading 0.8.9  (ISC)
   litemap 0.8.3  (Unicode-3.0)
   litrs 1.0.1  (MIT OR Apache-2.0)
@@ -74,6 +88,16 @@ with each component follow; identical texts are printed once as [#n].
   moxcms 0.7.11  (BSD-3-Clause OR Apache-2.0)
   nohash-hasher 0.2.0  (Apache-2.0 OR MIT)
   num-traits 0.2.19  (MIT OR Apache-2.0)
+  objc2 0.5.3  (MIT)
+  objc2 0.6.5  (MIT)
+  objc2-app-kit 0.2.2  (MIT)
+  objc2-app-kit 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+  objc2-core-foundation 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+  objc2-core-graphics 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+  objc2-encode 4.1.0  (MIT)
+  objc2-foundation 0.2.2  (MIT)
+  objc2-foundation 0.3.2  (MIT)
+  objc-sys 0.3.5  (MIT)
   once_cell 1.21.4  (MIT OR Apache-2.0)
   owned_ttf_parser 0.25.1  (Apache-2.0)
   parking_lot 0.12.5  (MIT OR Apache-2.0)
@@ -345,6 +369,14 @@ appear elsewhere in this file (MIT License, Apache License 2.0).
 
 ==============================================================================
 accesskit_consumer 0.24.3  (MIT OR Apache-2.0)
+Authors: The AccessKit contributors
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT OR Apache-2.0;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+accesskit_macos 0.17.4  (MIT OR Apache-2.0)
 Authors: The AccessKit contributors
 ==============================================================================
 This crate does not ship a license file. It is licensed under MIT OR Apache-2.0;
@@ -948,7 +980,7 @@ THE SOFTWARE.
 
 
 ==============================================================================
-bitflags 2.13.2  (MIT OR Apache-2.0)
+bitflags 1.3.2  (MIT/Apache-2.0)
 Authors: The Rust Project Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
@@ -980,6 +1012,21 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
+
+==============================================================================
+bitflags 2.13.2  (MIT OR Apache-2.0)
+Authors: The Rust Project Developers
+==============================================================================
+LICENSE-APACHE: same text as [#5] above.
+LICENSE-MIT: same text as [#10] above.
+
+==============================================================================
+block2 0.5.1  (MIT)
+Authors: Steven Sheldon, Mads Marquart <mads@marquart.dk>
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
 
 ==============================================================================
 block-buffer 0.10.4  (MIT OR Apache-2.0)
@@ -1145,6 +1192,48 @@ DEALINGS IN THE SOFTWARE.
 
 
 ==============================================================================
+cgl 0.3.2  (MIT / Apache-2.0)
+Authors: The Servo Project Developers
+==============================================================================
+
+[#17] COPYING
+Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+<LICENSE-MIT or http://opensource.org/licenses/MIT>, at your
+option. All files in the project carrying such notice may not be
+copied, modified, or distributed except according to those terms.
+
+LICENSE-APACHE: same text as [#5] above.
+
+[#18] LICENSE-MIT
+Copyright (c) 2012-2013 Mozilla Foundation
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
 clipboard-win 5.4.3  (BSL-1.0)
 Authors: Douman <douman@gmx.se>
 ==============================================================================
@@ -1153,12 +1242,40 @@ copyright its authors listed above. The standard texts of these licenses
 appear elsewhere in this file (MIT License, Apache License 2.0).
 
 ==============================================================================
+core-foundation 0.9.4  (MIT OR Apache-2.0)
+Authors: The Servo Project Developers
+==============================================================================
+LICENSE-APACHE: same text as [#5] above.
+LICENSE-MIT: same text as [#18] above.
+
+==============================================================================
+core-foundation-sys 0.8.7  (MIT OR Apache-2.0)
+Authors: The Servo Project Developers
+==============================================================================
+LICENSE-APACHE: same text as [#5] above.
+LICENSE-MIT: same text as [#18] above.
+
+==============================================================================
+core-graphics 0.23.2  (MIT OR Apache-2.0)
+Authors: The Servo Project Developers
+==============================================================================
+LICENSE-APACHE: same text as [#5] above.
+LICENSE-MIT: same text as [#18] above.
+
+==============================================================================
+core-graphics-types 0.1.3  (MIT OR Apache-2.0)
+Authors: The Servo Project Developers
+==============================================================================
+LICENSE-APACHE: same text as [#5] above.
+LICENSE-MIT: same text as [#18] above.
+
+==============================================================================
 cpufeatures 0.2.17  (MIT OR Apache-2.0)
 Authors: RustCrypto Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#17] LICENSE-MIT
+[#19] LICENSE-MIT
 Copyright (c) 2020-2025 The RustCrypto Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -1191,7 +1308,7 @@ crc32fast 1.5.3  (MIT OR Apache-2.0)
 Authors: Sam Rijs <srijs@airpost.net>, Alex Crichton <alex@alexcrichton.com>
 ==============================================================================
 
-[#18] LICENSE-APACHE
+[#20] LICENSE-APACHE
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -1395,7 +1512,7 @@ Authors: Sam Rijs <srijs@airpost.net>, Alex Crichton <alex@alexcrichton.com>
    limitations under the License.
 
 
-[#19] LICENSE-MIT
+[#21] LICENSE-MIT
 MIT License
 
 Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors
@@ -1425,7 +1542,7 @@ Authors: RustCrypto Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#20] LICENSE-MIT
+[#22] LICENSE-MIT
 Copyright (c) 2021 RustCrypto Developers
 
 Permission is hereby granted, free of charge, to any
@@ -1458,7 +1575,7 @@ cursor-icon 1.2.0  (MIT OR Apache-2.0 OR Zlib)
 Authors: Kirill Chibisov <contact@kchibisov.com>
 ==============================================================================
 
-[#21] LICENSE-APACHE
+[#23] LICENSE-APACHE
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1663,7 +1780,7 @@ Authors: Kirill Chibisov <contact@kchibisov.com>
    limitations under the License.
 
 
-[#22] LICENSE-MIT
+[#24] LICENSE-MIT
 Copyright (c) 2023 Kirill Chibisov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -1685,7 +1802,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-[#23] LICENSE-ZLIB
+[#25] LICENSE-ZLIB
 Copyright (c) 2023 Kirill Chibisov
 
 This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
@@ -1705,7 +1822,7 @@ Authors: RustCrypto Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#24] LICENSE-MIT
+[#26] LICENSE-MIT
 Copyright (c) 2017 Artyom Pavlov
 
 Permission is hereby granted, free of charge, to any
@@ -1734,6 +1851,22 @@ DEALINGS IN THE SOFTWARE.
 
 
 ==============================================================================
+dispatch 0.2.0  (MIT)
+Authors: Steven Sheldon
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+dispatch2 0.3.1  (Zlib OR Apache-2.0 OR MIT)
+Authors: Mads Marquart <mads@marquart.dk>, Mary <mary@mary.zone>
+==============================================================================
+This crate does not ship a license file. It is licensed under Zlib OR Apache-2.0 OR MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
 displaydoc 0.2.7  (MIT OR Apache-2.0)
 Authors: Jane Lusby <jlusby@yaah.dev>
 ==============================================================================
@@ -1746,7 +1879,7 @@ Authors: Slint Developers <info@slint.dev>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#25] LICENSE-MIT
+[#27] LICENSE-MIT
 Copyright (c) 2020 Olivier Goffart <ogoffart@sixtyfps.io>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1771,9 +1904,9 @@ SOFTWARE.
 ==============================================================================
 dpi 0.1.2  (Apache-2.0 AND MIT)
 ==============================================================================
-LICENSE: same text as [#18] above.
+LICENSE: same text as [#20] above.
 
-[#26] LICENSE-LIBM-MIT
+[#28] LICENSE-LIBM-MIT
 rust-lang/libm as a whole is available for use under the MIT license:
 
 ------------------------------------------------------------------------------
@@ -1896,7 +2029,7 @@ error-code 3.4.0  (BSL-1.0)
 Authors: Douman <douman@gmx.se>
 ==============================================================================
 
-[#27] LICENSE
+[#29] LICENSE
 Boost Software License - Version 1.0 - August 17th, 2003
 
 Permission is hereby granted, free of charge, to any person or organization
@@ -1928,7 +2061,7 @@ Authors: The image-rs Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#1] above.
 
-[#28] LICENSE-MIT
+[#30] LICENSE-MIT
 MIT License
 
 Permission is hereby granted, free of charge, to any
@@ -1962,7 +2095,7 @@ Authors: Alex Crichton <alex@alexcrichton.com>, Josh Triplett <josh@joshtriplett
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#29] LICENSE-MIT
+[#31] LICENSE-MIT
 Copyright (c) 2014-2026 Alex Crichton
 
 Permission is hereby granted, free of charge, to any
@@ -1991,12 +2124,54 @@ DEALINGS IN THE SOFTWARE.
 
 
 ==============================================================================
+foreign-types 0.5.0  (MIT/Apache-2.0)
+Authors: Steven Fackler <sfackler@gmail.com>
+==============================================================================
+LICENSE-APACHE: same text as [#20] above.
+
+[#32] LICENSE-MIT
+Copyright (c) 2017 The foreign-types Developers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+==============================================================================
+foreign-types-macros 0.2.4  (MIT/Apache-2.0)
+Authors: Steven Fackler <sfackler@gmail.com>
+==============================================================================
+LICENSE-APACHE: same text as [#20] above.
+LICENSE-MIT: same text as [#32] above.
+
+==============================================================================
+foreign-types-shared 0.3.1  (MIT/Apache-2.0)
+Authors: Steven Fackler <sfackler@gmail.com>
+==============================================================================
+LICENSE-APACHE: same text as [#20] above.
+LICENSE-MIT: same text as [#32] above.
+
+==============================================================================
 form_urlencoded 1.2.2  (MIT OR Apache-2.0)
 Authors: The rust-url developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#30] LICENSE-MIT
+[#33] LICENSE-MIT
 Copyright (c) 2013-2016 The rust-url developers
 
 Permission is hereby granted, free of charge, to any
@@ -2029,7 +2204,7 @@ generic-array 0.14.7  (MIT)
 Authors: Bartłomiej Kamiński <fizyk20@gmail.com>, Aaron Trent <novacrazy@gmail.com>
 ==============================================================================
 
-[#31] LICENSE
+[#34] LICENSE
 The MIT License (MIT)
 
 Copyright (c) 2015 Bartłomiej Kamiński
@@ -2058,7 +2233,7 @@ getrandom 0.2.17  (MIT OR Apache-2.0)
 Authors: The Rand Project Developers
 ==============================================================================
 
-[#32] LICENSE-APACHE
+[#35] LICENSE-APACHE
                               Apache License
                         Version 2.0, January 2004
                      https://www.apache.org/licenses/
@@ -2262,7 +2437,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[#33] LICENSE-MIT
+[#36] LICENSE-MIT
 Copyright (c) 2018-2024 The rust-random Project Developers
 Copyright (c) 2014 The Rust Project Developers
 
@@ -2298,7 +2473,7 @@ Authors: Joshua Groves <josh@joshgroves.com>, Dzmitry Malyshau <kvarkus@gmail.co
 LICENSE-APACHE: same text as [#5] above.
 LICENSE-MIT: same text as [#4] above.
 
-[#34] LICENSE-ZLIB
+[#37] LICENSE-ZLIB
 This software is provided 'as-is', without any express or implied
 warranty.  In no event will the authors be held liable for any damages
 arising from the use of this software.
@@ -2321,7 +2496,7 @@ glutin 0.32.3  (Apache-2.0)
 Authors: Kirill Chibisov <contact@kchibisov.com>
 ==============================================================================
 
-[#35] LICENSE
+[#38] LICENSE
 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -2529,20 +2704,20 @@ Apache License
 glutin_egl_sys 0.7.1  (Apache-2.0)
 Authors: Kirill Chibisov <contact@kchibisov.com>
 ==============================================================================
-LICENSE: same text as [#35] above.
+LICENSE: same text as [#38] above.
 
 ==============================================================================
 glutin_wgl_sys 0.6.1  (Apache-2.0)
 Authors: Kirill Chibisov <contact@kchibisov.com>
 ==============================================================================
-LICENSE: same text as [#35] above.
+LICENSE: same text as [#38] above.
 
 ==============================================================================
 glutin-winit 0.5.0  (MIT)
 Authors: Kirill Chibisov <contact@kchibisov.com>
 ==============================================================================
 
-[#36] LICENSE
+[#39] LICENSE
 Copyright © 2022 Kirill Chibisov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -2569,7 +2744,7 @@ icu_collections 2.1.1  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
 
-[#37] LICENSE
+[#40] LICENSE
 UNICODE LICENSE V3
 
 COPYRIGHT AND PERMISSION NOTICE
@@ -2622,37 +2797,37 @@ ICU 1.8.1 to ICU 57.1 © 1995-2016 International Business Machines Corporation a
 icu_locale_core 2.1.1  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 icu_normalizer 2.1.1  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 icu_normalizer_data 2.1.1  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 icu_properties 2.1.2  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 icu_properties_data 2.1.2  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 icu_provider 2.1.1  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 idna 1.1.0  (MIT OR Apache-2.0)
@@ -2660,7 +2835,7 @@ Authors: The rust-url developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#38] LICENSE-MIT
+[#41] LICENSE-MIT
 Copyright (c) 2013-2025 The rust-url developers
 
 Permission is hereby granted, free of charge, to any
@@ -2694,7 +2869,7 @@ Authors: The rust-url developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#39] LICENSE-MIT
+[#42] LICENSE-MIT
 Copyright (c) The rust-url developers
 
 Permission is hereby granted, free of charge, to any
@@ -2727,14 +2902,14 @@ image 0.25.9  (MIT OR Apache-2.0)
 Authors: The image-rs Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#1] above.
-LICENSE-MIT: same text as [#28] above.
+LICENSE-MIT: same text as [#30] above.
 
 ==============================================================================
 immutable-chunkmap 2.1.5  (Apache-2.0 OR MIT)
 Authors: Eric Stokes <letaris@gmail.com>
 ==============================================================================
 
-[#40] LICENSE-APACHE
+[#43] LICENSE-APACHE
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -2938,7 +3113,7 @@ Authors: Eric Stokes <letaris@gmail.com>
    limitations under the License.
 
 
-[#41] LICENSE-MIT
+[#44] LICENSE-MIT
 Copyright 2022 Eric Stokes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -2956,11 +3131,44 @@ LICENSE-APACHE: same text as [#1] above.
 LICENSE-MIT: same text as [#4] above.
 
 ==============================================================================
+libc 0.2.191  (MIT OR Apache-2.0)
+==============================================================================
+LICENSE-APACHE: same text as [#1] above.
+
+[#45] LICENSE-MIT
+Copyright (c) The Rust Project Developers
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
 libloading 0.8.9  (ISC)
 Authors: Simonas Kazlauskas <libloading@kazlauskas.me>
 ==============================================================================
 
-[#42] LICENSE
+[#46] LICENSE
 Copyright © 2015, Simonas Kazlauskas
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without
@@ -2979,7 +3187,7 @@ THIS SOFTWARE.
 litemap 0.8.3  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 litrs 1.0.1  (MIT OR Apache-2.0)
@@ -2987,7 +3195,7 @@ Authors: Lukas Kalbertodt <lukas.kalbertodt@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#1] above.
 
-[#43] LICENSE-MIT
+[#47] LICENSE-MIT
 Copyright (c) 2020 Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -3021,7 +3229,7 @@ Authors: Amanieu d'Antras <amanieu@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#44] LICENSE-MIT
+[#48] LICENSE-MIT
 Copyright (c) 2016 The Rust Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -3061,7 +3269,7 @@ memchr 2.8.3  (Unlicense OR MIT)
 Authors: Andrew Gallant <jamslam@gmail.com>, bluss
 ==============================================================================
 
-[#45] COPYING
+[#49] COPYING
 This project is dual-licensed under the Unlicense and MIT licenses.
 
 You may use this code under the terms of either license.
@@ -3074,7 +3282,7 @@ memoffset 0.9.1  (MIT)
 Authors: Gilad Naaman <gilad.naaman@gmail.com>
 ==============================================================================
 
-[#46] LICENSE
+[#50] LICENSE
 Copyright (c) 2017 Gilad Naaman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -3101,7 +3309,7 @@ miniz_oxide 0.8.9  (MIT OR Zlib OR Apache-2.0)
 Authors: Frommi <daniil.liferenko@gmail.com>, oyvindln <oyvindln@users.noreply.github.com>, Rich Geldreich richgel99@gmail.com
 ==============================================================================
 
-[#47] LICENSE
+[#51] LICENSE
 MIT License
 
 Copyright 2013-2014 RAD Game Tools and Valve Software
@@ -3129,9 +3337,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 LICENSE-APACHE.md: same text as [#1] above.
-LICENSE-MIT.md: same text as [#47] above.
+LICENSE-MIT.md: same text as [#51] above.
 
-[#48] LICENSE-ZLIB.md
+[#52] LICENSE-ZLIB.md
 Copyright 2013-2014 RAD Game Tools and Valve Software
 Copyright 2010-2014 Rich Geldreich and Tenacious Software LLC
 Copyright (c) 2020 Frommi
@@ -3152,17 +3360,17 @@ Permission is granted to anyone to use this software for any purpose, including 
 miniz_oxide 0.9.1  (MIT OR Zlib OR Apache-2.0)
 Authors: Frommi <daniil.liferenko@gmail.com>, oyvindln <oyvindln@users.noreply.github.com>, Rich Geldreich richgel99@gmail.com
 ==============================================================================
-LICENSE: same text as [#47] above.
+LICENSE: same text as [#51] above.
 LICENSE-APACHE.md: same text as [#1] above.
-LICENSE-MIT.md: same text as [#47] above.
-LICENSE-ZLIB.md: same text as [#48] above.
+LICENSE-MIT.md: same text as [#51] above.
+LICENSE-ZLIB.md: same text as [#52] above.
 
 ==============================================================================
 moxcms 0.7.11  (BSD-3-Clause OR Apache-2.0)
 Authors: Radzivon Bartoshyk
 ==============================================================================
 
-[#49] LICENSE.md
+[#53] LICENSE.md
 Copyright (c) Radzivon Bartoshyk. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
@@ -3191,7 +3399,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-[#50] LICENSE-APACHE.md
+[#54] LICENSE-APACHE.md
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -3401,7 +3609,7 @@ Authors: Parity Technologies <admin@parity.io>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#51] LICENSE-MIT
+[#55] LICENSE-MIT
 Copyright 2018 Parity Technologies (UK) Ltd.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -3430,6 +3638,80 @@ LICENSE-APACHE: same text as [#5] above.
 LICENSE-MIT: same text as [#10] above.
 
 ==============================================================================
+objc2 0.5.3  (MIT)
+Authors: Steven Sheldon, Mads Marquart <mads@marquart.dk>
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2 0.6.5  (MIT)
+Authors: Mads Marquart <mads@marquart.dk>
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-app-kit 0.2.2  (MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-app-kit 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under Zlib OR Apache-2.0 OR MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-core-foundation 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under Zlib OR Apache-2.0 OR MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-core-graphics 0.3.2  (Zlib OR Apache-2.0 OR MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under Zlib OR Apache-2.0 OR MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-encode 4.1.0  (MIT)
+Authors: Mads Marquart <mads@marquart.dk>
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-foundation 0.2.2  (MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc2-foundation 0.3.2  (MIT)
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
+objc-sys 0.3.5  (MIT)
+Authors: Mads Marquart <mads@marquart.dk>
+==============================================================================
+This crate does not ship a license file. It is licensed under MIT;
+copyright its authors listed above. The standard texts of these licenses
+appear elsewhere in this file (MIT License, Apache License 2.0).
+
+==============================================================================
 once_cell 1.21.4  (MIT OR Apache-2.0)
 Authors: Aleksey Kladov <aleksey.kladov@gmail.com>
 ==============================================================================
@@ -3447,14 +3729,14 @@ parking_lot 0.12.5  (MIT OR Apache-2.0)
 Authors: Amanieu d'Antras <amanieu@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
-LICENSE-MIT: same text as [#44] above.
+LICENSE-MIT: same text as [#48] above.
 
 ==============================================================================
 parking_lot_core 0.9.12  (MIT OR Apache-2.0)
 Authors: Amanieu d'Antras <amanieu@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
-LICENSE-MIT: same text as [#44] above.
+LICENSE-MIT: same text as [#48] above.
 
 ==============================================================================
 paste 1.0.15  (MIT OR Apache-2.0)
@@ -3468,7 +3750,7 @@ percent-encoding 2.3.2  (MIT OR Apache-2.0)
 Authors: The rust-url developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
-LICENSE-MIT: same text as [#38] above.
+LICENSE-MIT: same text as [#41] above.
 
 ==============================================================================
 pin-project-lite 0.2.17  (Apache-2.0 OR MIT)
@@ -3482,7 +3764,7 @@ Authors: The image-rs Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#52] LICENSE-MIT
+[#56] LICENSE-MIT
 Copyright (c) 2015 nwin
 
 Permission is hereby granted, free of charge, to any
@@ -3514,7 +3796,7 @@ DEALINGS IN THE SOFTWARE.
 potential_utf 0.1.6  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 proc-macro2 1.0.107  (MIT OR Apache-2.0)
@@ -3527,8 +3809,8 @@ LICENSE-MIT: same text as [#4] above.
 pxfm 0.1.30  (BSD-3-Clause OR Apache-2.0)
 Authors: Radzivon Bartoshyk
 ==============================================================================
-LICENSE.md: same text as [#49] above.
-LICENSE-APACHE.md: same text as [#50] above.
+LICENSE.md: same text as [#53] above.
+LICENSE-APACHE.md: same text as [#54] above.
 
 ==============================================================================
 quote 1.0.47  (MIT OR Apache-2.0)
@@ -3543,7 +3825,7 @@ Authors: Osspial <osspial@gmail.com>
 ==============================================================================
 LICENSE-APACHE.md: same text as [#1] above.
 
-[#53] LICENSE-MIT.md
+[#57] LICENSE-MIT.md
 MIT License
 
 Copyright (c) 2019 Osspial
@@ -3567,7 +3849,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-[#54] LICENSE-ZLIB.md
+[#58] LICENSE-ZLIB.md
 Copyright (c) 2020 Osspial
 
 This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
@@ -3585,7 +3867,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 ring 0.17.14  (Apache-2.0 AND ISC)
 ==============================================================================
 
-[#55] LICENSE
+[#59] LICENSE
 *ring* uses an "ISC" license, like BoringSSL used to use, for new code
 files. See LICENSE-other-bits for the text of that license.
 
@@ -3597,7 +3879,7 @@ See src/polyfill/once_cell/LICENSE-APACHE and src/polyfill/once_cell/LICENSE-MIT
 for the license to code that was sourced from the once_cell project.
 
 
-[#56] LICENSE-BoringSSL
+[#60] LICENSE-BoringSSL
 
                                  Apache License
                            Version 2.0, January 2004
@@ -3872,7 +4154,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-[#57] LICENSE-other-bits
+[#61] LICENSE-other-bits
 Copyright 2015-2025 Brian Smith.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -3893,7 +4175,7 @@ rustls 0.23.46  (Apache-2.0 OR ISC OR MIT)
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#58] LICENSE-ISC
+[#62] LICENSE-ISC
 ISC License (ISC)
 Copyright (c) 2016, Joseph Birr-Pixton <jpixton@gmail.com>
 
@@ -3911,7 +4193,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
 THIS SOFTWARE.
 
 
-[#59] LICENSE-MIT
+[#63] LICENSE-MIT
 Copyright (c) 2016 Joseph Birr-Pixton <jpixton@gmail.com>
 
 Permission is hereby granted, free of charge, to any
@@ -3943,7 +4225,7 @@ DEALINGS IN THE SOFTWARE.
 rustls-pki-types 1.15.1  (MIT OR Apache-2.0)
 ==============================================================================
 
-[#60] LICENSE-APACHE
+[#64] LICENSE-APACHE
                               Apache License
                         Version 2.0, January 2004
                      http://www.apache.org/licenses/
@@ -4147,7 +4429,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[#61] LICENSE-MIT
+[#65] LICENSE-MIT
 Copyright (c) 2023 Dirkjan Ochtman <dirkjan@ochtman.nl>
 
 Permission is hereby granted, free of charge, to any
@@ -4179,7 +4461,7 @@ DEALINGS IN THE SOFTWARE.
 rustls-webpki 0.103.16  (ISC)
 ==============================================================================
 
-[#62] LICENSE
+[#66] LICENSE
 Except as otherwise noted, this project is licensed under the following
 (ISC-style) terms:
 
@@ -4207,7 +4489,7 @@ Authors: bluss
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#63] LICENSE-MIT
+[#67] LICENSE-MIT
 Copyright (c) 2016-2019 Ulrik Sverdrup "bluss" and scopeguard developers
 
 Permission is hereby granted, free of charge, to any
@@ -4254,7 +4536,7 @@ Authors: RustCrypto Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#64] LICENSE-MIT
+[#68] LICENSE-MIT
 Copyright (c) 2006-2009 Graydon Hoare
 Copyright (c) 2009-2013 Mozilla Foundation
 Copyright (c) 2016 Artyom Pavlov
@@ -4289,7 +4571,7 @@ simd-adler32 0.3.10  (MIT)
 Authors: Marvin Countryman <me@maar.vin>
 ==============================================================================
 
-[#65] LICENSE.md
+[#69] LICENSE.md
 MIT License
 
 Copyright (c) [2021] [Marvin Countryman]
@@ -4319,7 +4601,7 @@ Authors: The Servo Project Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#66] LICENSE-MIT
+[#70] LICENSE-MIT
 Copyright (c) 2018 The Servo Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -4360,7 +4642,7 @@ Authors: Robert Grosse <n210241048576@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#67] LICENSE-MIT
+[#71] LICENSE-MIT
 Copyright (c) 2017 Robert Grosse
 
 Permission is hereby granted, free of charge, to any
@@ -4394,7 +4676,7 @@ Authors: Nikolai Vazquez
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#68] LICENSE-MIT
+[#72] LICENSE-MIT
 MIT License
 
 Copyright (c) 2017 Nikolai Vazquez
@@ -4423,7 +4705,7 @@ subtle 2.6.1  (BSD-3-Clause)
 Authors: Isis Lovecruft <isis@patternsinthevoid.net>, Henry de Valence <hdevalence@hdevalence.ca>
 ==============================================================================
 
-[#69] LICENSE
+[#73] LICENSE
 Copyright (c) 2016-2017 Isis Agora Lovecruft, Henry de Valence. All rights reserved.
 Copyright (c) 2016-2024 Isis Agora Lovecruft. All rights reserved.
 
@@ -4474,7 +4756,7 @@ synstructure 0.14.0  (MIT)
 Authors: Nika Layzell <nika@thelayzells.com>
 ==============================================================================
 
-[#70] LICENSE
+[#74] LICENSE
 Copyright 2016 Nika Layzell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -4488,14 +4770,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 tinystr 0.8.5  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 tracing 0.1.44  (MIT)
 Authors: Eliza Weisman <eliza@buoyant.io>, Tokio Contributors <team@tokio.rs>
 ==============================================================================
 
-[#71] LICENSE
+[#75] LICENSE
 Copyright (c) 2019 Tokio Contributors
 
 Permission is hereby granted, free of charge, to any
@@ -4527,7 +4809,7 @@ DEALINGS IN THE SOFTWARE.
 tracing-core 0.1.36  (MIT)
 Authors: Tokio Contributors <team@tokio.rs>
 ==============================================================================
-LICENSE: same text as [#71] above.
+LICENSE: same text as [#75] above.
 
 ==============================================================================
 ttf-parser 0.25.1  (MIT OR Apache-2.0)
@@ -4535,7 +4817,7 @@ Authors: Caleb Maclennan <caleb@alerque.com>, Laurenz Stampfl <laurenz.stampfl@g
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#72] LICENSE-MIT
+[#76] LICENSE-MIT
 Copyright (c) 2018 Yevhenii Reizner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -4561,11 +4843,11 @@ THE SOFTWARE.
 typenum 1.20.1  (MIT OR Apache-2.0)
 ==============================================================================
 
-[#73] LICENSE
+[#77] LICENSE
 MIT OR Apache-2.0
 
 
-[#74] LICENSE-APACHE
+[#78] LICENSE-APACHE
                               Apache License
                         Version 2.0, January 2004
                      http://www.apache.org/licenses/
@@ -4769,7 +5051,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[#75] LICENSE-MIT
+[#79] LICENSE-MIT
 The MIT License (MIT)
 
 Copyright (c) 2014 Paho Lurie-Gregg
@@ -4800,7 +5082,7 @@ Authors: David Tolnay <dtolnay@gmail.com>
 LICENSE-APACHE: same text as [#1] above.
 LICENSE-MIT: same text as [#4] above.
 
-[#76] LICENSE-UNICODE
+[#80] LICENSE-UNICODE
 UNICODE LICENSE V3
 
 COPYRIGHT AND PERMISSION NOTICE
@@ -4848,7 +5130,7 @@ Authors: kwantam <kwantam@gmail.com>, Manish Goregaokar <manishsmail@gmail.com>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#77] LICENSE-MIT
+[#81] LICENSE-MIT
 Copyright (c) 2015 The Rust Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -4881,7 +5163,7 @@ untrusted 0.9.0  (ISC)
 Authors: Brian Smith <brian@briansmith.org>
 ==============================================================================
 
-[#78] LICENSE.txt
+[#82] LICENSE.txt
 // Copyright 2015-2016 Brian Smith.
 //
 // Permission to use, copy, modify, and/or distribute this software for any
@@ -4903,7 +5185,7 @@ Authors: Martin Algesten <martin@algesten.se>, Jacob Hoffman-Andrews <ureq@hoffm
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#79] LICENSE-MIT
+[#83] LICENSE-MIT
 MIT License
 
 Copyright (c) 2019 Martin Algesten
@@ -4932,7 +5214,7 @@ url 2.5.8  (MIT OR Apache-2.0)
 Authors: The rust-url developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
-LICENSE-MIT: same text as [#38] above.
+LICENSE-MIT: same text as [#41] above.
 
 ==============================================================================
 utf_types 1.0.0  (Apache-2.0 OR MIT)
@@ -4940,7 +5222,7 @@ Authors: Henri Sivonen <hsivonen@hsivonen.fi>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#80] LICENSE-MIT
+[#84] LICENSE-MIT
 Copyright Mozilla Foundation
 
 Permission is hereby granted, free of charge, to any
@@ -4973,14 +5255,14 @@ utf8_iter 1.1.0  (Apache-2.0 OR MIT)
 Authors: Henri Sivonen <hsivonen@hsivonen.fi>
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
-LICENSE-MIT: same text as [#80] above.
+LICENSE-MIT: same text as [#84] above.
 
 ==============================================================================
 webbrowser 1.2.6  (MIT OR Apache-2.0)
 Authors: Amod Malviya @amodm
 ==============================================================================
 
-[#81] LICENSE-APACHE
+[#85] LICENSE-APACHE
                               Apache License
                         Version 2.0, January 2004
                      http://www.apache.org/licenses/
@@ -5173,7 +5455,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-[#82] LICENSE-MIT
+[#86] LICENSE-MIT
 The MIT License (MIT)
 
 Copyright (c) 2015-2022 Amod Malviya
@@ -5207,7 +5489,7 @@ DEALINGS IN THE SOFTWARE.
 webpki-roots 0.26.11  (CDLA-Permissive-2.0)
 ==============================================================================
 
-[#83] LICENSE
+[#87] LICENSE
 # Community Data License Agreement - Permissive - Version 2.0
 
 This is the Community Data License Agreement - Permissive, Version
@@ -5274,13 +5556,13 @@ insights.
 ==============================================================================
 webpki-roots 1.0.11  (CDLA-Permissive-2.0)
 ==============================================================================
-LICENSE: same text as [#83] above.
+LICENSE: same text as [#87] above.
 
 ==============================================================================
 web-time 1.1.0  (MIT OR Apache-2.0)
 ==============================================================================
 
-[#84] LICENSE-APACHE
+[#88] LICENSE-APACHE
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -5484,7 +5766,7 @@ web-time 1.1.0  (MIT OR Apache-2.0)
    limitations under the License.
 
 
-[#85] LICENSE-MIT
+[#89] LICENSE-MIT
 MIT License
 
 Copyright (c) 2023 dAxpeDDa
@@ -5512,9 +5794,9 @@ SOFTWARE.
 winapi 0.3.9  (MIT/Apache-2.0)
 Authors: Peter Atashian <retep998@gmail.com>
 ==============================================================================
-LICENSE-APACHE: same text as [#18] above.
+LICENSE-APACHE: same text as [#20] above.
 
-[#86] LICENSE-MIT
+[#90] LICENSE-MIT
 Copyright (c) 2015-2018 The winapi-rs Developers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -5541,7 +5823,7 @@ windows 0.58.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
 
-[#87] license-apache-2.0
+[#91] license-apache-2.0
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -5745,7 +6027,7 @@ Authors: Microsoft
    limitations under the License.
 
 
-[#88] license-mit
+[#92] license-mit
     MIT License
 
     Copyright (c) Microsoft Corporation.
@@ -5773,100 +6055,100 @@ Authors: Microsoft
 windows_x86_64_msvc 0.52.6  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-core 0.58.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-implement 0.58.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-interface 0.58.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-link 0.2.1  (MIT OR Apache-2.0)
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-result 0.2.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-strings 0.1.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-sys 0.52.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-sys 0.59.0  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 windows-targets 0.52.6  (MIT OR Apache-2.0)
 Authors: Microsoft
 ==============================================================================
-license-apache-2.0: same text as [#87] above.
-license-mit: same text as [#88] above.
+license-apache-2.0: same text as [#91] above.
+license-mit: same text as [#92] above.
 
 ==============================================================================
 winit 0.30.13  (Apache-2.0)
 Authors: The winit contributors, Pierre Krieger <pierre.krieger1708@gmail.com>
 ==============================================================================
-LICENSE: same text as [#18] above.
+LICENSE: same text as [#20] above.
 
 ==============================================================================
 writeable 0.6.4  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 yoke 0.8.4  (Unicode-3.0)
 Authors: Manish Goregaokar <manishsmail@gmail.com>
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 yoke-derive 0.8.4  (Unicode-3.0)
 Authors: Manish Goregaokar <manishsmail@gmail.com>
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zerocopy 0.8.63  (BSD-2-Clause OR Apache-2.0 OR MIT)
 ==============================================================================
 
-[#89] LICENSE-APACHE
+[#93] LICENSE-APACHE
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -6070,7 +6352,7 @@ zerocopy 0.8.63  (BSD-2-Clause OR Apache-2.0 OR MIT)
    limitations under the License.
 
 
-[#90] LICENSE-BSD
+[#94] LICENSE-BSD
 Copyright 2019 The Fuchsia Authors.
 
 Redistribution and use in source and binary forms, with or without
@@ -6097,7 +6379,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-[#91] LICENSE-MIT
+[#95] LICENSE-MIT
 Copyright 2023 The Fuchsia Authors
 
 Permission is hereby granted, free of charge, to any
@@ -6129,13 +6411,13 @@ DEALINGS IN THE SOFTWARE.
 zerofrom 0.1.8  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zerofrom-derive 0.1.8  (Unicode-3.0)
 Authors: Manish Goregaokar <manishsmail@gmail.com>
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zeroize 1.9.1  (Apache-2.0 OR MIT)
@@ -6143,7 +6425,7 @@ Authors: The RustCrypto Project Developers
 ==============================================================================
 LICENSE-APACHE: same text as [#5] above.
 
-[#92] LICENSE-MIT
+[#96] LICENSE-MIT
 Copyright (c) 2018-2026 The RustCrypto Project Developers
 
 Permission is hereby granted, free of charge, to any
@@ -6175,19 +6457,19 @@ DEALINGS IN THE SOFTWARE.
 zerotrie 0.2.5  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zerovec 0.11.9  (Unicode-3.0)
 Authors: The ICU4X Project Developers
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zerovec-derive 0.11.7  (Unicode-3.0)
 Authors: Manish Goregaokar <manishsmail@gmail.com>
 ==============================================================================
-LICENSE: same text as [#37] above.
+LICENSE: same text as [#40] above.
 
 ==============================================================================
 zmij 1.0.23  (MIT)
@@ -6196,14 +6478,14 @@ Authors: David Tolnay <dtolnay@gmail.com>
 LICENSE-MIT: same text as [#4] above.
 
 ==============================================================================
-Fonts bundled in namkey-settings.exe (via epaint_default_fonts)
+Fonts bundled in namkey-settings (via epaint_default_fonts)
   Ubuntu-Light.ttf       Ubuntu Font Licence 1.0
   Hack-Regular.ttf       MIT License / Bitstream Vera License
   NotoEmoji-Regular.ttf  SIL Open Font License 1.1
   emoji-icon-font.ttf    MIT License
 ==============================================================================
 
-[#93] emoji-icon-font-mit-license.txt
+[#97] emoji-icon-font-mit-license.txt
 MIT License
 
 Copyright (c) 2014 John Slegers
@@ -6215,7 +6497,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-[#94] Hack-Regular.txt
+[#98] Hack-Regular.txt
 The work in the Hack project is Copyright 2018 Source Foundry Authors and licensed under the MIT License
 
 The work in the DejaVu project was committed to the public domain.
@@ -6249,7 +6531,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 Except as contained in this notice, the names of Gnome, the Gnome Foundation, and Bitstream Inc., shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from the Gnome Foundation or Bitstream Inc., respectively. For further information, contact: fonts at gnome dot org.
 
 
-[#95] OFL.txt
+[#99] OFL.txt
 This Font Software is licensed under the SIL Open Font License,
 Version 1.1.
 
@@ -6344,7 +6626,7 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
 
-[#96] UFL.txt
+[#100] UFL.txt
 -------------------------------
 UBUNTU FONT LICENCE Version 1.0
 -------------------------------

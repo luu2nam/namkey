@@ -27,7 +27,7 @@ NamKey được viết từ đầu bằng ngôn ngữ Rust, dựa trên quy tắ
 NamKey **không sao chép, không chuyển thể mã nguồn** của bất kỳ bộ gõ nào khác. Ý tưởng về tính năng được
 tham khảo qua việc sử dụng các bộ gõ hiện có, như mọi phần mềm cùng loại.
 
-Tên UniKey, EVKey, OpenKey, Windows, macOS và các tên sản phẩm khác được nhắc tới thuộc về chủ sở hữu
+Tên UniKey, Windows, macOS và các tên sản phẩm khác được nhắc tới thuộc về chủ sở hữu
 tương ứng. Việc nhắc tới chỉ nhằm mục đích mô tả.
 
 ## Thành phần của bên thứ ba

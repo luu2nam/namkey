@@ -15,6 +15,8 @@ Licence. Không có thành phần nào dùng giấy phép copyleft như GPL, LGP
 | glow | Vẽ đồ hoạ | MIT, Apache 2.0 hoặc Zlib |
 | [AccessKit](https://github.com/AccessKit/accesskit) | Hỗ trợ trình đọc màn hình | MIT hoặc Apache 2.0 |
 | [windows-sys](https://github.com/microsoft/windows-rs) | Gọi API Windows | MIT hoặc Apache 2.0 |
+| [objc2](https://github.com/madsmtm/objc2) (objc2-app-kit, objc2-foundation, block2, dispatch2) | Gọi API macOS (AppKit, Foundation) | MIT; một số gói MIT, Apache 2.0 hoặc Zlib |
+| core-foundation, core-graphics | Gọi API macOS cho cửa sổ cài đặt | MIT hoặc Apache 2.0 |
 | [ureq](https://github.com/algesten/ureq) | Kết nối HTTPS để kiểm tra cập nhật | MIT hoặc Apache 2.0 |
 | [rustls](https://github.com/rustls/rustls) | Mã hoá TLS | Apache 2.0, ISC hoặc MIT |
 | ring | Thuật toán mã hoá | Apache 2.0 và ISC |
@@ -34,11 +36,11 @@ Licence. Không có thành phần nào dùng giấy phép copyleft như GPL, LGP
 | Noto Emoji | SIL Open Font License 1.1 |
 | emoji-icon-font | MIT |
 
-Trên Windows, cửa sổ cài đặt dùng phông Segoe UI có sẵn của hệ điều hành. Phông này không được phân phối
-kèm NamKey.
+Cửa sổ cài đặt dùng phông có sẵn của hệ điều hành: Segoe UI trên Windows, Arial trên macOS. Các phông này
+không được phân phối kèm NamKey.
 
 ## Toàn văn giấy phép
 
-Danh sách đầy đủ 139 thành phần, kèm phiên bản và toàn văn giấy phép của từng thành phần, có trong tệp
-**`THIRD-PARTY-LICENSES.txt`**. Tệp này có sẵn trong ứng dụng (Cài đặt → Pháp lý) và trên
-github.com/luu2nam/namkey.
+Danh sách đầy đủ 163 thành phần của bản Windows và bản macOS, kèm phiên bản và toàn văn giấy phép của từng
+thành phần, có trong tệp **`THIRD-PARTY-LICENSES.txt`**. Tệp này có sẵn trong ứng dụng (Cài đặt → Pháp lý)
+và trên github.com/luu2nam/namkey.

@@ -8,8 +8,13 @@ Không có tài khoản, không quảng cáo, không theo dõi, không gửi s�
 ## 1. Phím bấm
 
 Để thêm dấu, NamKey đọc phím bạn bấm và chỉ giữ trong bộ nhớ **từ đang gõ** (vài ký tự). Từ này bị xoá
-ngay khi bạn gõ dấu cách, dấu câu, Enter, click chuột hoặc chuyển cửa sổ. Phím bấm không bao giờ được ghi
-ra đĩa và không được gửi qua mạng.
+ngay khi bạn gõ dấu cách, dấu câu, Enter, click chuột hoặc chuyển cửa sổ. Phím bấm không được ghi ra đĩa
+và không bao giờ được gửi qua mạng.
+
+Ngoại lệ duy nhất là **chế độ dò lỗi** của bản macOS: chỉ bật khi bạn tự chạy NamKey bằng lệnh dò lỗi
+(theo hướng dẫn khi báo lỗi), không bao giờ tự bật. Khi đó các phím được ghi vào tệp
+`~/Library/Logs/NamKey/namkey.log` trên máy của bạn để tìm lỗi, và không được gửi đi đâu. Mở lại NamKey
+như bình thường là tắt chế độ này; bạn có thể xoá tệp đó bất cứ lúc nào.
 
 ## 2. Kết nối mạng
 
@@ -28,7 +33,7 @@ Bạn có thể tắt việc tự kiểm tra trong **Cài đặt → Cập nhậ
 
 ## 3. Dữ liệu lưu trên máy của bạn
 
-NamKey chỉ lưu những thứ sau, và tất cả nằm trên máy của bạn:
+NamKey chỉ lưu những thứ sau, và tất cả nằm trên máy của bạn. Trên Windows:
 
 | Dữ liệu | Vị trí | Mục đích |
 |---|---|---|
@@ -36,11 +41,29 @@ NamKey chỉ lưu những thứ sau, và tất cả nằm trên máy của bạn
 | Khởi động cùng Windows (nếu bật) | Giá trị `namkey` trong `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` | Tự chạy khi đăng nhập |
 | Hiện biểu tượng ở thanh tác vụ | Giá trị `IsPromoted` trong `HKCU\Control Panel\NotifyIconSettings` (mục của NamKey) | Đưa biểu tượng ra khỏi ô `^` lần đầu chạy |
 
+Trên macOS:
+
+| Dữ liệu | Vị trí | Mục đích |
+|---|---|---|
+| Cài đặt (kiểu gõ, phím tắt...) | `~/Library/Application Support/namkey/settings.ini` | Ghi nhớ lựa chọn của bạn |
+| Khoá chạy một bản | `~/Library/Application Support/namkey/namkey.lock` | Không cho hai bộ gõ chạy cùng lúc |
+| Khởi động cùng macOS (nếu bật) | `~/Library/LaunchAgents/net.namlh.namkey.plist` | Tự chạy khi đăng nhập |
+| Quyền Trợ năng | Do macOS lưu (Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Trợ năng) | Cho phép bộ gõ đọc phím và gửi chữ có dấu |
+
 ## 4. Gỡ NamKey và xoá dữ liệu
+
+Trên Windows:
 
 1. Tắt **Khởi động cùng Windows** trong Cài đặt → Hệ thống.
 2. Thoát NamKey: click phải biểu tượng ở khay rồi chọn **Thoát**.
 3. Xoá thư mục chứa `namkey.exe`, và thư mục `%APPDATA%\namkey`.
+
+Trên macOS:
+
+1. Tắt **Khởi động cùng macOS** trong Cài đặt → Hệ thống.
+2. Thoát NamKey: bấm biểu tượng V/E trên thanh menu rồi chọn **Thoát NamKey**.
+3. Xoá `NamKey.app`, và thư mục `~/Library/Application Support/namkey`.
+4. Trong Cài đặt hệ thống → Quyền riêng tư & Bảo mật → Trợ năng, chọn NamKey rồi bấm dấu −.
 
 ## 5. Trẻ em
 

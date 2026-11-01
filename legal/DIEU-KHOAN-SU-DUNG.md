@@ -23,12 +23,12 @@ miễn phí tại namlh.net/namkey.
 ## 2. Cách NamKey hoạt động
 
 Để thêm dấu tiếng Việt, NamKey phải nhận các phím bạn bấm trên toàn hệ thống (dùng cơ chế "hook bàn phím"
-của Windows), rồi gửi lại chữ đã có dấu vào ứng dụng bạn đang gõ.
+của Windows, hoặc quyền Trợ năng trên macOS), rồi gửi lại chữ đã có dấu vào ứng dụng bạn đang gõ.
 
 - Việc xử lý phím diễn ra **hoàn toàn trên máy của bạn**. NamKey không lưu lại, không ghi nhật ký và không
   gửi phím bấm của bạn đi bất cứ đâu. Chi tiết xem văn bản **Chính sách quyền riêng tư**.
-- Vì đọc phím bấm, NamKey có thể bị một số phần mềm diệt virus hoặc Windows SmartScreen cảnh báo, nhất là
-  khi chưa được ký số. Chỉ tải NamKey từ các nguồn chính thức nêu trên.
+- Vì đọc phím bấm, NamKey có thể bị một số phần mềm diệt virus, Windows SmartScreen hoặc Gatekeeper của macOS
+  cảnh báo, nhất là khi chưa được ký số. Chỉ tải NamKey từ các nguồn chính thức nêu trên.
 - Không nên chạy cùng lúc hai bộ gõ tiếng Việt. Chữ có thể bị thêm dấu hai lần, và phím tắt có thể bị
   tranh nhau.
 
