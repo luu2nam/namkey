@@ -21,9 +21,20 @@
 - **Kiểm tra chính tả với từ điển âm tiết tiếng Việt.** Từ không phải tiếng Việt như `text`, `windows`,
   `google`, `wow`, `data` được giữ nguyên như đã gõ.
 - **Gõ lặp phím để bỏ dấu** (`ass` → as). Xoá lùi không mất dấu (tiếng ⌫ → tiến).
+- **Gõ tắt:** `vn` + dấu cách → **Việt Nam**; gõ `VN` → **VIỆT NAM**. Nhập, xuất danh sách gõ tắt.
+- **Nhớ chế độ Việt/Anh theo từng ứng dụng**, và danh sách ứng dụng **luôn gõ tiếng Anh** (Terminal, game...).
+- **Tự tạm ngừng** khi bạn chọn bàn phím chữ khác (Nhật, Trung, Hàn, Nga...); **báo** khi có bộ gõ tiếng Việt
+  khác đang chạy.
+- **Tuỳ chọn thêm:** `[` `]` gõ ư ơ, Quick Telex (`cc` → ch, `nn` → ng), phụ âm nhanh (`f` → ph), bấm Esc hoặc
+  bấm rồi thả Ctrl để trả lại phím của từ đang gõ, giữ nguyên từ tiếng Anh thông dụng, viết hoa chữ đầu câu.
+- **Từ tiếng Anh có chữ lặp** (`coffee`, `office`, `pass`) được giữ nguyên, không mất chữ.
+- **Chuyển mã văn bản** giữa Unicode, Unicode tổ hợp, TCVN3 (ABC), VNI Windows và CP1258.
+- **Gõ ra bảng mã TCVN3 (ABC) hoặc VNI Windows** cho văn bản, bản vẽ dùng font cũ (`.VnTime`, `VNI-Times`),
+  chọn chung hoặc riêng cho từng ứng dụng (vd. chỉ AutoCAD gõ TCVN3).
+- **Gửi từng phím** cho ứng dụng hay mất chữ, lặp chữ khi thêm dấu (terminal...), chọn riêng từng ứng dụng.
 - **Bật/tắt nhanh** bằng **Ctrl+Shift**, hoặc qua biểu tượng **V/E** ở khay hệ thống (Windows) hay thanh menu
   (macOS). **Phím tắt gán lại được**, kể cả để chuyển Telex ↔ VNI hay mở cài đặt.
-- **Cửa sổ cài đặt rõ ràng**, có bảng phím, ví dụ và ô gõ thử.
+- **Cửa sổ cài đặt rõ ràng**, có bảng phím, ví dụ và ô gõ thử, giao diện sáng hoặc tối theo hệ thống.
 - **Tự cập nhật** từ trang này, có kiểm tra mã SHA-256 của file tải về (Windows; bản macOS báo khi có bản mới).
 - **Gọn nhẹ.** Bộ gõ chạy nền chưa tới 1 MB, không quảng cáo, không thu thập dữ liệu.
 
@@ -101,11 +112,13 @@ menu của biểu tượng V/E.
 - Windows: chưa gõ được vào ứng dụng chạy bằng quyền Administrator.
 - Thanh địa chỉ của trình duyệt (có gợi ý tự động) đôi khi làm sai chữ.
 - Từ tiếng Anh trùng với âm tiết tiếng Việt có thật vẫn được gõ thành tiếng Việt (`this` → thí, `six` → sĩ),
-  vì đó cũng là cách gõ tiếng Việt hợp lệ. Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt.
+  vì đó cũng là cách gõ tiếng Việt hợp lệ. Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt, hoặc bật tuỳ chọn bấm rồi
+  thả Ctrl để trả lại phím của một từ.
 - macOS: chỉ có bản cho máy chip Apple, chưa được Apple công chứng (notarize), chưa tự cài bản cập nhật.
 - Chưa có bản cho Linux.
 
-Góp ý hoặc báo lỗi: tạo [issue](https://github.com/luu2nam/namkey/issues) tại đây.
+Góp ý hoặc báo lỗi: gửi ngay trong NamKey (**Cài đặt → Góp ý**, hoặc mục **Góp ý...** trên biểu tượng NamKey),
+hoặc tạo [issue](https://github.com/luu2nam/namkey/issues) tại đây.
 
 ## Pháp lý
 

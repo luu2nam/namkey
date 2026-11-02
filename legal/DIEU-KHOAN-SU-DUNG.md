@@ -73,4 +73,5 @@ Các điều khoản này được điều chỉnh theo pháp luật nước C�
 
 ## 10. Liên hệ
 
-Góp ý, báo lỗi hoặc thắc mắc: tạo issue tại github.com/luu2nam/namkey/issues, hoặc liên hệ qua namlh.net.
+Góp ý, báo lỗi hoặc thắc mắc: gửi trong NamKey (Cài đặt → Góp ý), liên hệ qua namlh.net, hoặc tạo issue tại
+github.com/luu2nam/namkey/issues.
