@@ -44,16 +44,22 @@ Vào trang [Releases](https://github.com/luu2nam/namkey/releases/latest) và t�
 
 | Máy | File |
 |---|---|
-| Windows 10/11, 64-bit | `namkey-<phiên bản>-windows-x64.zip` |
+| Windows 10/11, 64-bit | `namkey-<phiên bản>-windows-x64-setup.exe` |
 | macOS 11 trở lên, chip Apple (M1, M2...) | `namkey-<phiên bản>-macos-arm64.zip` |
+
+Các file còn lại trong trang Releases dành cho bộ cập nhật trong app, bạn không cần tải.
 
 ## Cài đặt trên Windows
 
-1. Tải file `namkey-<phiên bản>-windows-x64.zip` (xem [Tải về](#tải-về)).
-2. Giải nén vào một thư mục của bạn, ví dụ `C:\Users\<tên bạn>\namkey`.
-   Không nên đặt trong `Program Files`, vì bộ cập nhật cần ghi được vào thư mục này.
-3. Chạy **`namkey.exe`**. Biểu tượng **V** sẽ hiện ở khay hệ thống, góc phải thanh tác vụ. Nếu không thấy, bấm mũi tên **^** ở đó.
-4. Click phải vào biểu tượng rồi chọn **Cài đặt...** để chọn kiểu gõ và bật **Khởi động cùng Windows**.
+1. Tải file `namkey-<phiên bản>-windows-x64-setup.exe` (xem [Tải về](#tải-về)).
+2. Chạy file vừa tải rồi bấm theo hướng dẫn. Không cần quyền quản trị.
+3. Biểu tượng **V** sẽ hiện ở khay hệ thống, góc phải thanh tác vụ. Nếu không thấy, bấm mũi tên **^** ở đó.
+4. Click phải vào biểu tượng rồi chọn **Cài đặt...** để chọn kiểu gõ.
+
+Muốn dùng không cần cài: tải riêng **`namkey.exe`**, đặt vào một thư mục của bạn rồi chạy. Chỉ cần đúng một file
+này, cửa sổ cài đặt đã nằm sẵn bên trong.
+
+Muốn gỡ: vào **Cài đặt Windows → Ứng dụng**, tìm **NamKey** rồi chọn **Gỡ cài đặt**.
 
 > **Lưu ý**
 > - NamKey chưa được ký số. Lần đầu chạy, Windows SmartScreen có thể cảnh báo: bấm **More info → Run anyway**.
