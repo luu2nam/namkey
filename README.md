@@ -88,8 +88,8 @@ Muốn gỡ: vào **Cài đặt Windows → Ứng dụng**, tìm **NamKey** rồ
 | **Ctrl+Shift** (bấm rồi thả, không kèm phím khác) | Bật/tắt tiếng Việt |
 | Windows: click trái biểu tượng ở khay | Bật/tắt tiếng Việt |
 | Windows: nháy đúp biểu tượng ở khay | Mở cửa sổ cài đặt |
-| Windows: click phải biểu tượng ở khay | Chọn Telex/VNI, Cài đặt, Kiểm tra cập nhật, Thoát |
-| macOS: bấm biểu tượng trên thanh menu | Chọn Tiếng Việt/Tiếng Anh, Telex/VNI, Cài đặt, Kiểm tra cập nhật, Thoát |
+| Windows: click phải biểu tượng ở khay | Chọn Tiếng Việt/Tiếng Anh, Kiểu gõ, Bảng mã, Cài đặt, Kiểm tra cập nhật, Thoát |
+| macOS: bấm biểu tượng trên thanh menu | Chọn Tiếng Việt/Tiếng Anh, Kiểu gõ, Bảng mã, Cài đặt, Kiểm tra cập nhật, Thoát |
 
 ### Bảng phím
 
@@ -115,11 +115,13 @@ menu của biểu tượng V/E.
 
 ## Hạn chế đã biết
 
-- Windows: chưa gõ được vào ứng dụng chạy bằng quyền Administrator.
-- Thanh địa chỉ của trình duyệt (có gợi ý tự động) đôi khi làm sai chữ.
-- Từ tiếng Anh trùng với âm tiết tiếng Việt có thật vẫn được gõ thành tiếng Việt (`this` → thí, `six` → sĩ),
-  vì đó cũng là cách gõ tiếng Việt hợp lệ. Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt, hoặc bật tuỳ chọn bấm rồi
-  thả Ctrl để trả lại phím của một từ.
+- Windows: muốn gõ vào ứng dụng chạy bằng quyền Administrator thì chọn **Chạy với quyền quản trị...** trong menu của
+  biểu tượng V/E; mỗi lần đăng nhập phải chọn lại.
+- macOS: thanh địa chỉ của trình duyệt (có gợi ý tự động) đôi khi làm sai chữ.
+- Ô có gợi ý tự động trong trang web đôi khi làm sai chữ.
+- Từ tiếng Anh trùng với âm tiết tiếng Việt có thật, nếu đứng một mình, vẫn được gõ thành tiếng Việt (`this` → thí,
+  `six` → sĩ), vì đó cũng là cách gõ tiếng Việt hợp lệ. Đứng cạnh từ tiếng Anh khác thì được giữ nguyên (`this file`,
+  `this is`). Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt, hoặc bật tuỳ chọn bấm rồi thả Ctrl để trả lại phím của một từ.
 - macOS: chỉ có bản cho máy chip Apple, chưa được Apple công chứng (notarize), chưa tự cài bản cập nhật.
 - Chưa có bản cho Linux.
 
