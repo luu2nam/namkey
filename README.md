@@ -19,15 +19,19 @@
   `nguwowif`, `nguoiwf`, `ngwowif` đều ra **người**; `duongwfd` ra **đường**.
 - **Đặt dấu kiểu cũ hoặc kiểu mới:** hòa, khỏe, thủy hoặc hoà, khoẻ, thuỷ.
 - **Kiểm tra chính tả với từ điển âm tiết tiếng Việt.** Từ không phải tiếng Việt như `text`, `windows`,
-  `google`, `wow`, `data` được giữ nguyên như đã gõ.
+  `google` được giữ nguyên như đã gõ.
 - **Gõ lặp phím để bỏ dấu** (`ass` → as). Xoá lùi không mất dấu (tiếng ⌫ → tiến).
+- **Gõ từ tiếng Anh không cần tắt tiếng Việt:** thấy phím vừa bấm làm chữ ra dấu thì bấm lại đúng phím đó là về
+  chữ thường, rồi gõ tiếp (`usser` → user, `isso` → iso, `wwith` → with).
+- **Viết tắt có chữ đ:** `GDD` → GĐ, `HDDND` → HĐND, `dcd` → đc.
 - **Gõ tắt:** `vn` + dấu cách → **Việt Nam**; gõ `VN` → **VIỆT NAM**. Nhập, xuất danh sách gõ tắt.
 - **Nhớ chế độ Việt/Anh theo từng ứng dụng**, và danh sách ứng dụng **luôn gõ tiếng Anh** (Terminal, game...).
 - **Tự tạm ngừng** khi bạn chọn bàn phím chữ khác (Nhật, Trung, Hàn, Nga...); **báo** khi có bộ gõ tiếng Việt
   khác đang chạy.
 - **Tuỳ chọn thêm:** `[` `]` gõ ư ơ, Quick Telex (`cc` → ch, `nn` → ng), phụ âm nhanh (`f` → ph), bấm Esc hoặc
   bấm rồi thả Ctrl để trả lại phím của từ đang gõ, giữ nguyên từ tiếng Anh thông dụng, viết hoa chữ đầu câu.
-- **Từ tiếng Anh có chữ lặp** (`coffee`, `office`, `pass`) được giữ nguyên, không mất chữ.
+- **Tuỳ chọn trả lại phím khi từ không phải tiếng Việt** (tắt sẵn): bật thì `data`, `wow`, `coffee`, `office` được
+  giữ nguyên khi gõ xong từ, và từ tiếng Anh đứng cạnh nhau (`this file`) không bị thêm dấu.
 - **Chuyển mã văn bản** giữa Unicode, Unicode tổ hợp, TCVN3 (ABC), VNI Windows và CP1258.
 - **Gõ ra bảng mã TCVN3 (ABC) hoặc VNI Windows** cho văn bản, bản vẽ dùng font cũ (`.VnTime`, `VNI-Times`),
   chọn chung hoặc riêng cho từng ứng dụng (vd. chỉ AutoCAD gõ TCVN3).
@@ -116,12 +120,12 @@ menu của biểu tượng V/E.
 ## Hạn chế đã biết
 
 - Windows: muốn gõ vào ứng dụng chạy bằng quyền Administrator thì chọn **Chạy với quyền quản trị...** trong menu của
-  biểu tượng V/E; mỗi lần đăng nhập phải chọn lại.
+  biểu tượng V/E (hoặc ở trang Hệ thống). Mỗi lần đăng nhập phải chọn lại.
 - macOS: thanh địa chỉ của trình duyệt (có gợi ý tự động) đôi khi làm sai chữ.
 - Ô có gợi ý tự động trong trang web đôi khi làm sai chữ.
 - Từ tiếng Anh trùng với âm tiết tiếng Việt có thật, nếu đứng một mình, vẫn được gõ thành tiếng Việt (`this` → thí,
-  `six` → sĩ), vì đó cũng là cách gõ tiếng Việt hợp lệ. Đứng cạnh từ tiếng Anh khác thì được giữ nguyên (`this file`,
-  `this is`). Khi gõ tiếng Anh, bấm Ctrl+Shift để tắt, hoặc bật tuỳ chọn bấm rồi thả Ctrl để trả lại phím của một từ.
+  `six` → sĩ), vì đó cũng là cách gõ tiếng Việt hợp lệ. Bấm lại phím vừa làm ra dấu để về chữ thường (`thiss` → this),
+  hoặc bấm Ctrl+Shift để tắt tiếng Việt, hoặc bật tuỳ chọn bấm rồi thả Ctrl để trả lại phím của một từ.
 - macOS: chỉ có bản cho máy chip Apple, chưa được Apple công chứng (notarize), chưa tự cài bản cập nhật.
 - Chưa có bản cho Linux.
 
