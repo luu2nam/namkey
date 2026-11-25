@@ -15,7 +15,7 @@
 
 ## Tính năng
 
-- **Telex và VNI, gõ theo thói quen của bạn.** Gõ dấu ở đâu trong từ cũng được, theo thứ tự nào cũng được:
+- **Telex, Simple Telex và VNI, gõ theo thói quen của bạn.** Gõ dấu ở đâu trong từ cũng được, theo thứ tự nào cũng được:
   `nguwowif`, `nguoiwf`, `ngwowif` đều ra **người**; `duongwfd` ra **đường**.
 - **Đặt dấu kiểu cũ hoặc kiểu mới:** hòa, khỏe, thủy hoặc hoà, khoẻ, thuỷ.
 - **Kiểm tra chính tả với từ điển âm tiết tiếng Việt.** Từ không phải tiếng Việt như `text`, `windows`,
@@ -23,21 +23,21 @@
 - **Gõ lặp phím để bỏ dấu** (`ass` → as). Xoá lùi không mất dấu (tiếng ⌫ → tiến).
 - **Gõ từ tiếng Anh không cần tắt tiếng Việt:** thấy phím vừa bấm làm chữ ra dấu thì bấm lại đúng phím đó là về
   chữ thường, rồi gõ tiếp (`usser` → user, `isso` → iso, `wwith` → with).
-- **Viết tắt có chữ đ:** `GDD` → GĐ, `HDDND` → HĐND, `dcd` → đc.
+- **Viết tắt có chữ đ:** `GDD` → GĐ, `HDDND` → HĐND, `UBDD` → UBĐ, `DDNA` → ĐNA, `dcd` → đc.
 - **Gõ tắt:** `vn` + dấu cách → **Việt Nam**; gõ `VN` → **VIỆT NAM**. Nhập, xuất danh sách gõ tắt.
 - **Nhớ chế độ Việt/Anh theo từng ứng dụng**, và danh sách ứng dụng **luôn gõ tiếng Anh** (Terminal, game...).
 - **Tự tạm ngừng** khi bạn chọn bàn phím chữ khác (Nhật, Trung, Hàn, Nga...); **báo** khi có bộ gõ tiếng Việt
   khác đang chạy.
 - **Tuỳ chọn thêm:** `[` `]` gõ ư ơ, Quick Telex (`cc` → ch, `nn` → ng), phụ âm nhanh (`f` → ph), bấm Esc hoặc
   bấm rồi thả Ctrl để trả lại phím của từ đang gõ, giữ nguyên từ tiếng Anh thông dụng, viết hoa chữ đầu câu.
-- **Tuỳ chọn trả lại phím khi từ không phải tiếng Việt** (tắt sẵn): bật thì `data`, `wow`, `coffee`, `office` được
-  giữ nguyên khi gõ xong từ, và từ tiếng Anh đứng cạnh nhau (`this file`) không bị thêm dấu.
+- **Trả lại phím khi từ không phải tiếng Việt** (bật sẵn): `data`, `wow`, `photo` được giữ nguyên khi gõ xong từ,
+  và từ tiếng Anh đứng cạnh nhau (`this file`) không bị thêm dấu. Tuỳ chọn thêm cho từ có chữ lặp (`coffee`, `office`).
 - **Chuyển mã văn bản** giữa Unicode, Unicode tổ hợp, TCVN3 (ABC), VNI Windows và CP1258.
 - **Gõ ra bảng mã TCVN3 (ABC) hoặc VNI Windows** cho văn bản, bản vẽ dùng font cũ (`.VnTime`, `VNI-Times`),
   chọn chung hoặc riêng cho từng ứng dụng (vd. chỉ AutoCAD gõ TCVN3).
 - **Gửi từng phím** cho ứng dụng hay mất chữ, lặp chữ khi thêm dấu (terminal...), chọn riêng từng ứng dụng.
 - **Bật/tắt nhanh** bằng **Ctrl+Shift**, hoặc qua biểu tượng **V/E** ở khay hệ thống (Windows) hay thanh menu
-  (macOS). **Phím tắt gán lại được**, kể cả để chuyển Telex ↔ VNI hay mở cài đặt.
+  (macOS). **Phím tắt gán lại được**, kể cả để đổi kiểu gõ hay mở cài đặt.
 - **Cửa sổ cài đặt rõ ràng**, có bảng phím, ví dụ và ô gõ thử, giao diện sáng hoặc tối theo hệ thống.
 - **Tự cập nhật** từ trang này, có kiểm tra mã SHA-256 của file tải về (Windows; bản macOS báo khi có bản mới).
 - **Gọn nhẹ.** Bộ gõ chạy nền chưa tới 1 MB, không quảng cáo, không thu thập dữ liệu.
